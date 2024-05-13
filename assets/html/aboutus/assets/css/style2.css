@@ -1,0 +1,101 @@
+
+ .our-team{
+  background-color: #4a00e0;
+ }
+  .row {
+    display: flex;
+    flex-wrap:nowrap;
+    padding: 2em 1em;
+    text-align: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content:center;
+  }
+  .column {
+    padding: 5em 0;
+  }
+ h1 {
+    text-align: center;
+    font-size: 3.1em;
+    color: #070d47;
+    margin-top: 70px;
+  }
+  .card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  .card .img-container {
+    /* width: 8em;
+    height: 8em; */
+    background-color: #f2f2f2;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .card h3 {
+    font-weight: 500;
+  }
+  .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  .icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+  }
+  .card:hover {
+    background: rgb(0, 1, 43);
+    color: #ffffff;
+  }
+  .card:hover .img-container {
+    transform: scale(1.15);
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
+  .img-container {
+    width: 100px; /* Adjust the width of the image container */
+    height: 100px; /* Adjust the height of the image container */
+    overflow: hidden;
+    border-radius: 50%; /* Set border-radius to make it circular */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img-container img {
+    width: 100%; /* Ensure the image covers the container */
+    height: auto;
+}
